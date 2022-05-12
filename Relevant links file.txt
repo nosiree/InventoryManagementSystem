@@ -1,3 +1,0 @@
-https://no-siree.atlassian.net/browse/IMSP-1?atlOrigin=eyJpIjoiZGYyYzg5MmZkNjU0NGQzNThjZjcwMTFjZmY2OTBjNjMiLCJwIjoiaiJ9
-
-https://github.com/nosiree/InventoryManagementSystem.git
