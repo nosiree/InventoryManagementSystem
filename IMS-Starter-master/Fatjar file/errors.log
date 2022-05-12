@@ -1,0 +1,20 @@
+20220512 15:56:02 INFO  [main] ims.IMS IMS.java38 - Welcome to the Inventory Management System!
+20220512 15:56:02 INFO  [main] ims.IMS IMS.java43 - Which entity would you like to use?
+20220512 15:56:02 INFO  [main] domain.Domain Domain.java27 - CUSTOMER: Information about customers
+20220512 15:56:02 INFO  [main] domain.Domain Domain.java27 - ITEM: Individual Items
+20220512 15:56:02 INFO  [main] domain.Domain Domain.java27 - ORDER: Purchases of items
+20220512 15:56:02 INFO  [main] domain.Domain Domain.java27 - STOP: To close the application
+20220512 15:56:04 INFO  [main] ims.IMS IMS.java74 - What would you like to do with item:
+20220512 15:56:04 INFO  [main] controller.Action Action.java38 - CREATE: To save a new entity into the database
+20220512 15:56:04 INFO  [main] controller.Action Action.java38 - READ: To read an entity from the database
+20220512 15:56:04 INFO  [main] controller.Action Action.java38 - UPDATE: To change an entity already in the database
+20220512 15:56:04 INFO  [main] controller.Action Action.java38 - DELETE: To remove an entity from the database
+20220512 15:56:04 INFO  [main] controller.Action Action.java38 - RETURN: To return to domain selection
+20220512 15:56:07 DEBUG [main] dao.ItemDAO ItemDAO.java41 - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+20220512 15:56:07 ERROR [main] dao.ItemDAO ItemDAO.java42 - Access denied for user 'root'@'localhost' (using password: YES)
+20220512 15:56:07 INFO  [main] ims.IMS IMS.java74 - What would you like to do with item:
+20220512 15:56:07 INFO  [main] controller.Action Action.java38 - CREATE: To save a new entity into the database
+20220512 15:56:07 INFO  [main] controller.Action Action.java38 - READ: To read an entity from the database
+20220512 15:56:07 INFO  [main] controller.Action Action.java38 - UPDATE: To change an entity already in the database
+20220512 15:56:07 INFO  [main] controller.Action Action.java38 - DELETE: To remove an entity from the database
+20220512 15:56:07 INFO  [main] controller.Action Action.java38 - RETURN: To return to domain selection

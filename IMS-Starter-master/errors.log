@@ -1,55 +1,164 @@
-20220511 10:48:46 INFO  [main] ims.IMS IMS.java38 - Welcome to the Inventory Management System!
-20220511 10:48:46 INFO  [main] ims.IMS IMS.java43 - Which entity would you like to use?
-20220511 10:48:46 INFO  [main] domain.Domain Domain.java27 - CUSTOMER: Information about customers
-20220511 10:48:46 INFO  [main] domain.Domain Domain.java27 - ITEM: Individual Items
-20220511 10:48:46 INFO  [main] domain.Domain Domain.java27 - ORDER: Purchases of items
-20220511 10:48:46 INFO  [main] domain.Domain Domain.java27 - STOP: To close the application
-20220511 10:48:49 INFO  [main] ims.IMS IMS.java74 - What would you like to do with customer:
-20220511 10:48:49 INFO  [main] controller.Action Action.java38 - CREATE: To save a new entity into the database
-20220511 10:48:49 INFO  [main] controller.Action Action.java38 - READ: To read an entity from the database
-20220511 10:48:49 INFO  [main] controller.Action Action.java38 - UPDATE: To change an entity already in the database
-20220511 10:48:49 INFO  [main] controller.Action Action.java38 - DELETE: To remove an entity from the database
-20220511 10:48:49 INFO  [main] controller.Action Action.java38 - RETURN: To return to domain selection
-20220511 10:48:52 INFO  [main] controller.CustomerController CustomerController.java47 - Please enter a first name
-20220511 10:48:54 INFO  [main] controller.CustomerController CustomerController.java49 - Please enter a surname
-20220511 10:48:56 INFO  [main] controller.CustomerController CustomerController.java52 - Customer created
-20220511 10:48:56 INFO  [main] ims.IMS IMS.java74 - What would you like to do with customer:
-20220511 10:48:56 INFO  [main] controller.Action Action.java38 - CREATE: To save a new entity into the database
-20220511 10:48:56 INFO  [main] controller.Action Action.java38 - READ: To read an entity from the database
-20220511 10:48:56 INFO  [main] controller.Action Action.java38 - UPDATE: To change an entity already in the database
-20220511 10:48:56 INFO  [main] controller.Action Action.java38 - DELETE: To remove an entity from the database
-20220511 10:48:56 INFO  [main] controller.Action Action.java38 - RETURN: To return to domain selection
-20220511 10:48:59 INFO  [main] controller.CustomerController CustomerController.java36 - id:1 first name:DANIEL surname:CONROY
-20220511 10:48:59 INFO  [main] ims.IMS IMS.java74 - What would you like to do with customer:
-20220511 10:48:59 INFO  [main] controller.Action Action.java38 - CREATE: To save a new entity into the database
-20220511 10:48:59 INFO  [main] controller.Action Action.java38 - READ: To read an entity from the database
-20220511 10:48:59 INFO  [main] controller.Action Action.java38 - UPDATE: To change an entity already in the database
-20220511 10:48:59 INFO  [main] controller.Action Action.java38 - DELETE: To remove an entity from the database
-20220511 10:48:59 INFO  [main] controller.Action Action.java38 - RETURN: To return to domain selection
-20220511 10:49:06 INFO  [main] controller.CustomerController CustomerController.java79 - Please enter the id of the customer you would like to delete
-20220511 10:49:08 INFO  [main] ims.IMS IMS.java74 - What would you like to do with customer:
-20220511 10:49:08 INFO  [main] controller.Action Action.java38 - CREATE: To save a new entity into the database
-20220511 10:49:08 INFO  [main] controller.Action Action.java38 - READ: To read an entity from the database
-20220511 10:49:08 INFO  [main] controller.Action Action.java38 - UPDATE: To change an entity already in the database
-20220511 10:49:08 INFO  [main] controller.Action Action.java38 - DELETE: To remove an entity from the database
-20220511 10:49:08 INFO  [main] controller.Action Action.java38 - RETURN: To return to domain selection
-20220511 10:49:13 INFO  [main] ims.IMS IMS.java74 - What would you like to do with customer:
-20220511 10:49:13 INFO  [main] controller.Action Action.java38 - CREATE: To save a new entity into the database
-20220511 10:49:13 INFO  [main] controller.Action Action.java38 - READ: To read an entity from the database
-20220511 10:49:13 INFO  [main] controller.Action Action.java38 - UPDATE: To change an entity already in the database
-20220511 10:49:13 INFO  [main] controller.Action Action.java38 - DELETE: To remove an entity from the database
-20220511 10:49:13 INFO  [main] controller.Action Action.java38 - RETURN: To return to domain selection
-20220511 10:49:21 INFO  [main] ims.IMS IMS.java43 - Which entity would you like to use?
-20220511 10:49:21 INFO  [main] domain.Domain Domain.java27 - CUSTOMER: Information about customers
-20220511 10:49:21 INFO  [main] domain.Domain Domain.java27 - ITEM: Individual Items
-20220511 10:49:21 INFO  [main] domain.Domain Domain.java27 - ORDER: Purchases of items
-20220511 10:49:21 INFO  [main] domain.Domain Domain.java27 - STOP: To close the application
-20220511 10:49:25 INFO  [main] ims.IMS IMS.java74 - What would you like to do with order:
-20220511 10:49:25 INFO  [main] controller.Action Action.java38 - CREATE: To save a new entity into the database
-20220511 10:49:25 INFO  [main] controller.Action Action.java38 - READ: To read an entity from the database
-20220511 10:49:25 INFO  [main] controller.Action Action.java38 - UPDATE: To change an entity already in the database
-20220511 10:49:25 INFO  [main] controller.Action Action.java38 - DELETE: To remove an entity from the database
-20220511 10:49:25 INFO  [main] controller.Action Action.java38 - RETURN: To return to domain selection
-20220511 10:49:29 INFO  [main] controller.OrderController OrderController.java57 - Please enter your Customer ID
-20220511 10:49:31 DEBUG [main] dao.OrderDAO OrderDAO.java111 - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`ims`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`) ON DELETE CASCADE)
-20220511 10:49:31 ERROR [main] dao.OrderDAO OrderDAO.java112 - Cannot add or update a child row: a foreign key constraint fails (`ims`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`) ON DELETE CASCADE)
+20220512 16:07:53 INFO  [main] controller.ItemController ItemController.java31 - Item id: 1 Item name: cup Price: 20.0
+20220512 16:07:53 INFO  [main] controller.ItemController ItemController.java39 - Please enter a Product Name
+20220512 16:07:53 INFO  [main] controller.ItemController ItemController.java41 - Please enter a Product Price
+20220512 16:07:53 INFO  [main] controller.ItemController ItemController.java44 - Product created
+20220512 16:07:53 INFO  [main] controller.ItemController ItemController.java65 - Please enter the id of the Product you would like to delete
+20220512 16:07:53 INFO  [main] controller.ItemController ItemController.java51 - Please enter the id of the Product you would like to update
+20220512 16:07:53 INFO  [main] controller.ItemController ItemController.java53 - Please enter a Product Name
+20220512 16:07:53 INFO  [main] controller.ItemController ItemController.java55 - Please enter a Product Price
+20220512 16:07:53 INFO  [main] controller.ItemController ItemController.java58 - Product Updated
+20220512 16:07:53 INFO  [main] controller.OrderItemController OrderItemController.java32 - Order ID: 3, First Name: null, Surname: null, Product: null, Quantity: 10
+20220512 16:07:53 INFO  [main] controller.OrderItemController OrderItemController.java102 - Please enter the id of an order you would like to change 
+20220512 16:07:53 INFO  [main] controller.OrderItemController OrderItemController.java104 - Please enter the id of  of the item you would like to delete
+20220512 16:07:53 INFO  [main] controller.OrderItemController OrderItemController.java87 - Please enter the ID of  the order you would  like to change
+20220512 16:07:53 INFO  [main] controller.OrderItemController OrderItemController.java89 - Please enter item ID
+20220512 16:07:53 INFO  [main] controller.OrderItemController OrderItemController.java91 - Please enter quantity
+20220512 16:07:53 INFO  [main] controller.OrderItemController OrderItemController.java94 - Order Updated
+20220512 16:07:53 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:07:53 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:07:53 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:07:53 DEBUG [main] dao.CustomerDAO CustomerDAO.java58 - java.sql.SQLException: No suitable driver found for 
+20220512 16:07:53 ERROR [main] dao.CustomerDAO CustomerDAO.java59 - No suitable driver found for 
+20220512 16:07:53 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:07:53 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:07:53 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:07:53 DEBUG [main] dao.CustomerDAO CustomerDAO.java95 - java.sql.SQLException: No suitable driver found for 
+20220512 16:07:53 ERROR [main] dao.CustomerDAO CustomerDAO.java96 - No suitable driver found for 
+20220512 16:07:53 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:07:53 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:07:53 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:07:53 DEBUG [main] dao.CustomerDAO CustomerDAO.java45 - java.sql.SQLException: No suitable driver found for 
+20220512 16:07:53 ERROR [main] dao.CustomerDAO CustomerDAO.java46 - No suitable driver found for 
+20220512 16:07:53 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:07:53 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:07:53 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:07:53 DEBUG [main] dao.CustomerDAO CustomerDAO.java79 - java.sql.SQLException: No suitable driver found for 
+20220512 16:07:53 ERROR [main] dao.CustomerDAO CustomerDAO.java80 - No suitable driver found for 
+20220512 16:07:53 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:07:53 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:07:53 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:07:53 DEBUG [main] dao.CustomerDAO CustomerDAO.java137 - java.sql.SQLException: No suitable driver found for 
+20220512 16:07:53 ERROR [main] dao.CustomerDAO CustomerDAO.java138 - No suitable driver found for 
+20220512 16:07:53 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:07:53 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:07:53 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:07:53 DEBUG [main] dao.CustomerDAO CustomerDAO.java119 - java.sql.SQLException: No suitable driver found for 
+20220512 16:07:53 ERROR [main] dao.CustomerDAO CustomerDAO.java120 - No suitable driver found for 
+20220512 16:08:43 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:08:43 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:08:43 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:08:43 DEBUG [main] dao.ItemDAO ItemDAO.java54 - java.sql.SQLException: No suitable driver found for 
+20220512 16:08:43 ERROR [main] dao.ItemDAO ItemDAO.java55 - No suitable driver found for 
+20220512 16:08:43 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:08:43 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:08:43 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:08:43 DEBUG [main] dao.ItemDAO ItemDAO.java89 - java.sql.SQLException: No suitable driver found for 
+20220512 16:08:43 ERROR [main] dao.ItemDAO ItemDAO.java90 - No suitable driver found for 
+20220512 16:08:43 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:08:43 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:08:43 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:08:43 DEBUG [main] dao.ItemDAO ItemDAO.java41 - java.sql.SQLException: No suitable driver found for 
+20220512 16:08:43 ERROR [main] dao.ItemDAO ItemDAO.java42 - No suitable driver found for 
+20220512 16:08:43 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:08:43 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:08:43 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:08:43 DEBUG [main] dao.ItemDAO ItemDAO.java71 - java.sql.SQLException: No suitable driver found for 
+20220512 16:08:43 ERROR [main] dao.ItemDAO ItemDAO.java72 - No suitable driver found for 
+20220512 16:08:43 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:08:43 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:08:43 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:08:43 DEBUG [main] dao.ItemDAO ItemDAO.java122 - java.sql.SQLException: No suitable driver found for 
+20220512 16:08:43 ERROR [main] dao.ItemDAO ItemDAO.java123 - No suitable driver found for 
+20220512 16:08:43 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:08:43 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:08:43 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:08:43 DEBUG [main] dao.ItemDAO ItemDAO.java107 - java.sql.SQLException: No suitable driver found for 
+20220512 16:08:43 ERROR [main] dao.ItemDAO ItemDAO.java108 - No suitable driver found for 
+20220512 16:09:31 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:09:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:09:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:09:31 DEBUG [main] dao.OrderDAO OrderDAO.java55 - java.sql.SQLException: No suitable driver found for 
+20220512 16:09:31 ERROR [main] dao.OrderDAO OrderDAO.java56 - No suitable driver found for 
+20220512 16:09:31 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:09:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:09:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:09:31 DEBUG [main] dao.OrderDAO OrderDAO.java77 - java.sql.SQLException: No suitable driver found for 
+20220512 16:09:31 ERROR [main] dao.OrderDAO OrderDAO.java78 - No suitable driver found for 
+20220512 16:09:31 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:09:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:09:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:09:32 DEBUG [main] dao.OrderDAO OrderDAO.java95 - java.sql.SQLException: No suitable driver found for 
+20220512 16:09:32 ERROR [main] dao.OrderDAO OrderDAO.java96 - No suitable driver found for 
+20220512 16:09:32 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:09:32 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:09:32 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:09:32 DEBUG [main] dao.OrderDAO OrderDAO.java41 - java.sql.SQLException: No suitable driver found for 
+20220512 16:09:32 ERROR [main] dao.OrderDAO OrderDAO.java42 - No suitable driver found for 
+20220512 16:09:32 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:09:32 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:09:32 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:09:32 DEBUG [main] dao.OrderDAO OrderDAO.java111 - java.sql.SQLException: No suitable driver found for 
+20220512 16:09:32 ERROR [main] dao.OrderDAO OrderDAO.java112 - No suitable driver found for 
+20220512 16:09:32 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:09:32 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:09:32 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:09:32 DEBUG [main] dao.OrderDAO OrderDAO.java133 - java.sql.SQLException: No suitable driver found for 
+20220512 16:09:32 ERROR [main] dao.OrderDAO OrderDAO.java134 - No suitable driver found for 
+20220512 16:09:32 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:09:32 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:09:32 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:10:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 DEBUG [main] dao.OrderItemDAO OrderItemDAO.java55 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 ERROR [main] dao.OrderItemDAO OrderItemDAO.java56 - No suitable driver found for 
+20220512 16:10:31 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:10:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 DEBUG [main] dao.OrderItemDAO OrderItemDAO.java95 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 ERROR [main] dao.OrderItemDAO OrderItemDAO.java96 - No suitable driver found for 
+20220512 16:10:31 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:10:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 DEBUG [main] dao.OrderItemDAO OrderItemDAO.java74 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 ERROR [main] dao.OrderItemDAO OrderItemDAO.java75 - No suitable driver found for 
+20220512 16:10:31 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:10:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:10:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 DEBUG [main] dao.OrderItemDAO OrderItemDAO.java120 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 ERROR [main] dao.OrderItemDAO OrderItemDAO.java121 - No suitable driver found for 
+20220512 16:10:31 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:10:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:10:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 ERROR [main] utils.DBUtils DBUtils.java31 - java.lang.NullPointerException: inStream parameter is null
+20220512 16:10:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 DEBUG [main] utils.DBUtils DBUtils.java67 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 DEBUG [main] dao.OrderItemDAO OrderItemDAO.java140 - java.sql.SQLException: No suitable driver found for 
+20220512 16:10:31 ERROR [main] dao.OrderItemDAO OrderItemDAO.java141 - No suitable driver found for 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              20220512 16:32:14 ERROR [main] controller.Action Action.java54 - Invalid selection please try again
+20220512 16:32:16 INFO  [main] controller.OrderController OrderController.java75 - Please enter your Customer ID
+20220512 16:32:18 INFO  [main] controller.OrderController OrderController.java77 - [Customer ID: 1,  Order ID: 1]
+20220512 16:32:18 INFO  [main] controller.OrderController OrderController.java78 - Would you like to add a new Product or update existing order?
+20220512 16:32:18 INFO  [main] controller.OrderController OrderController.java79 - NEW or EXISTING
+20220512 16:32:19 INFO  [main] ims.IMS IMS.java74 - What would you like to do with order:
+20220512 16:32:19 INFO  [main] controller.Action Action.java38 - CREATE: To save a new entity into the database
+20220512 16:32:19 INFO  [main] controller.Action Action.java38 - READ: To read an entity from the database
+20220512 16:32:19 INFO  [main] controller.Action Action.java38 - UPDATE: To change an entity already in the database
+20220512 16:32:19 INFO  [main] controller.Action Action.java38 - DELETE: To remove an entity from the database
+20220512 16:32:19 INFO  [main] controller.Action Action.java38 - RETURN: To return to domain selection
+20220512 16:32:20 ERROR [main] controller.Action Action.java54 - Invalid selection please try again
+20220512 16:32:20 ERROR [main] controller.Action Action.java54 - Invalid selection please try again
+20220512 16:32:21 ERROR [main] controller.Action Action.java54 - Invalid selection please try again
+20220512 16:32:22 ERROR [main] controller.Action Action.java54 - Invalid selection please try again
+20220512 16:32:22 ERROR [main] controller.Action Action.java54 - Invalid selection please try again
+20220512 16:32:24 INFO  [main] ims.IMS IMS.java43 - Which entity would you like to use?
+20220512 16:32:24 INFO  [main] domain.Domain Domain.java27 - CUSTOMER: Information about customers
+20220512 16:32:24 INFO  [main] domain.Domain Domain.java27 - ITEM: Individual Items
+20220512 16:32:24 INFO  [main] domain.Domain Domain.java27 - ORDER: Purchases of items
+20220512 16:32:24 INFO  [main] domain.Domain Domain.java27 - STOP: To close the application
