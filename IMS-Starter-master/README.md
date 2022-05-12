@@ -1,68 +1,29 @@
-Coverage: 34%
-# Project Title
+Test Coverage: 63.1%
+# Project IMS
 
-One Paragraph of project description goes here
+IMS project is a Java language learning project designed to create shop-like programme using CRUD for customers, items and orders and store the information in My SQL database.
 
 ## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+In src/main/resources/db.properties enter your own mySQL password and possibly change the root if have or want to use it differently.
 
 ### Prerequisites
+Requirements to run the programme:
+Java 14 or later
+SQL 5.7 or later
+Java IDE
 
-What things you need to install the software and how to install them
+## Jira Link
+https://no-siree.atlassian.net/browse/IMSP-1?atlOrigin=eyJpIjoiZGYyYzg5MmZkNjU0NGQzNThjZjcwMTFjZmY2OTBjNjMiLCJwIjoiaiJ9
 
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system. Break down into which tests and what they do
-
-### Unit Tests 
-
-Explain what these tests test, why and how to run them
-
-```
-Give an example
-```
-
-### Integration Tests 
-Explain what these tests test, why and how to run them
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+###  Tests 
+Right click src/test/java and run as JUnit test
+Allow all tests to finish
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+To run the program, clone the repository to  your local machine and open it in eclipse. Then locate Runner class, right click it and run the java application.
+
+Either that or go into the Fatjar file folder, type cmd into the destination box at the top, to the left of the search box, and once cmd has opened type: java -jar ims-0.0.1-jar-with-dependencies.jar
 
 ## Built With
 
@@ -70,11 +31,7 @@ Add additional notes about how to deploy this on a live system
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning.
-
-## Authors
-
-* **Chris Perrins** - *Initial work* - [christophperrins](https://github.com/christophperrins)
+We use Git for versioning.
 
 ## License
 
@@ -84,6 +41,4 @@ This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+Thank you to SonarQube for inspiring some of the naming conventions used in the code and helping with a couple bugs
