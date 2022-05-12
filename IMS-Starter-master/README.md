@@ -23,7 +23,7 @@ Allow all tests to finish
 
 To run the program, clone the repository to  your local machine and open it in eclipse. Then locate Runner class, right click it and run the java application.
 
-Either that or go into the Fatjar file folder, type cmd into the destination box at the top, to the left of the search box, and once cmd has opened type: java -jar ims-0.0.1-jar-with-dependencies.jar
+Either that or go into the Fatjar file folder, type cmd into the destination box at the top, to the left of the search box, and once cmd has opened type: java -jar ims-0.0.1-jar-with-dependencies.jar however this will likely only work for you if you have set your password to your root as the same as mine
 
 ## Built With
 
