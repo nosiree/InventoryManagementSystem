@@ -1,0 +1,55 @@
+20220511 10:48:46 INFO  [main] ims.IMS IMS.java38 - Welcome to the Inventory Management System!
+20220511 10:48:46 INFO  [main] ims.IMS IMS.java43 - Which entity would you like to use?
+20220511 10:48:46 INFO  [main] domain.Domain Domain.java27 - CUSTOMER: Information about customers
+20220511 10:48:46 INFO  [main] domain.Domain Domain.java27 - ITEM: Individual Items
+20220511 10:48:46 INFO  [main] domain.Domain Domain.java27 - ORDER: Purchases of items
+20220511 10:48:46 INFO  [main] domain.Domain Domain.java27 - STOP: To close the application
+20220511 10:48:49 INFO  [main] ims.IMS IMS.java74 - What would you like to do with customer:
+20220511 10:48:49 INFO  [main] controller.Action Action.java38 - CREATE: To save a new entity into the database
+20220511 10:48:49 INFO  [main] controller.Action Action.java38 - READ: To read an entity from the database
+20220511 10:48:49 INFO  [main] controller.Action Action.java38 - UPDATE: To change an entity already in the database
+20220511 10:48:49 INFO  [main] controller.Action Action.java38 - DELETE: To remove an entity from the database
+20220511 10:48:49 INFO  [main] controller.Action Action.java38 - RETURN: To return to domain selection
+20220511 10:48:52 INFO  [main] controller.CustomerController CustomerController.java47 - Please enter a first name
+20220511 10:48:54 INFO  [main] controller.CustomerController CustomerController.java49 - Please enter a surname
+20220511 10:48:56 INFO  [main] controller.CustomerController CustomerController.java52 - Customer created
+20220511 10:48:56 INFO  [main] ims.IMS IMS.java74 - What would you like to do with customer:
+20220511 10:48:56 INFO  [main] controller.Action Action.java38 - CREATE: To save a new entity into the database
+20220511 10:48:56 INFO  [main] controller.Action Action.java38 - READ: To read an entity from the database
+20220511 10:48:56 INFO  [main] controller.Action Action.java38 - UPDATE: To change an entity already in the database
+20220511 10:48:56 INFO  [main] controller.Action Action.java38 - DELETE: To remove an entity from the database
+20220511 10:48:56 INFO  [main] controller.Action Action.java38 - RETURN: To return to domain selection
+20220511 10:48:59 INFO  [main] controller.CustomerController CustomerController.java36 - id:1 first name:DANIEL surname:CONROY
+20220511 10:48:59 INFO  [main] ims.IMS IMS.java74 - What would you like to do with customer:
+20220511 10:48:59 INFO  [main] controller.Action Action.java38 - CREATE: To save a new entity into the database
+20220511 10:48:59 INFO  [main] controller.Action Action.java38 - READ: To read an entity from the database
+20220511 10:48:59 INFO  [main] controller.Action Action.java38 - UPDATE: To change an entity already in the database
+20220511 10:48:59 INFO  [main] controller.Action Action.java38 - DELETE: To remove an entity from the database
+20220511 10:48:59 INFO  [main] controller.Action Action.java38 - RETURN: To return to domain selection
+20220511 10:49:06 INFO  [main] controller.CustomerController CustomerController.java79 - Please enter the id of the customer you would like to delete
+20220511 10:49:08 INFO  [main] ims.IMS IMS.java74 - What would you like to do with customer:
+20220511 10:49:08 INFO  [main] controller.Action Action.java38 - CREATE: To save a new entity into the database
+20220511 10:49:08 INFO  [main] controller.Action Action.java38 - READ: To read an entity from the database
+20220511 10:49:08 INFO  [main] controller.Action Action.java38 - UPDATE: To change an entity already in the database
+20220511 10:49:08 INFO  [main] controller.Action Action.java38 - DELETE: To remove an entity from the database
+20220511 10:49:08 INFO  [main] controller.Action Action.java38 - RETURN: To return to domain selection
+20220511 10:49:13 INFO  [main] ims.IMS IMS.java74 - What would you like to do with customer:
+20220511 10:49:13 INFO  [main] controller.Action Action.java38 - CREATE: To save a new entity into the database
+20220511 10:49:13 INFO  [main] controller.Action Action.java38 - READ: To read an entity from the database
+20220511 10:49:13 INFO  [main] controller.Action Action.java38 - UPDATE: To change an entity already in the database
+20220511 10:49:13 INFO  [main] controller.Action Action.java38 - DELETE: To remove an entity from the database
+20220511 10:49:13 INFO  [main] controller.Action Action.java38 - RETURN: To return to domain selection
+20220511 10:49:21 INFO  [main] ims.IMS IMS.java43 - Which entity would you like to use?
+20220511 10:49:21 INFO  [main] domain.Domain Domain.java27 - CUSTOMER: Information about customers
+20220511 10:49:21 INFO  [main] domain.Domain Domain.java27 - ITEM: Individual Items
+20220511 10:49:21 INFO  [main] domain.Domain Domain.java27 - ORDER: Purchases of items
+20220511 10:49:21 INFO  [main] domain.Domain Domain.java27 - STOP: To close the application
+20220511 10:49:25 INFO  [main] ims.IMS IMS.java74 - What would you like to do with order:
+20220511 10:49:25 INFO  [main] controller.Action Action.java38 - CREATE: To save a new entity into the database
+20220511 10:49:25 INFO  [main] controller.Action Action.java38 - READ: To read an entity from the database
+20220511 10:49:25 INFO  [main] controller.Action Action.java38 - UPDATE: To change an entity already in the database
+20220511 10:49:25 INFO  [main] controller.Action Action.java38 - DELETE: To remove an entity from the database
+20220511 10:49:25 INFO  [main] controller.Action Action.java38 - RETURN: To return to domain selection
+20220511 10:49:29 INFO  [main] controller.OrderController OrderController.java57 - Please enter your Customer ID
+20220511 10:49:31 DEBUG [main] dao.OrderDAO OrderDAO.java111 - java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`ims`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`) ON DELETE CASCADE)
+20220511 10:49:31 ERROR [main] dao.OrderDAO OrderDAO.java112 - Cannot add or update a child row: a foreign key constraint fails (`ims`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`id`) ON DELETE CASCADE)
